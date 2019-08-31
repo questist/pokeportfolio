@@ -1,0 +1,38 @@
+@CHARSET "ISO-8859-1";
+
+div.container
+{
+	width: 650px;
+	height: 500px;
+	margin: 25px;
+	border: 1px solid black;
+	background: #b3b5b1;
+}
+
+#sortable-art, #sortable-3d
+{ 
+	list-style-type: none;
+	margin: 0px; 
+	padding: 0px; 
+	width: 650px;
+}
+
+#sortable-art li, #sortable-3d li
+{ 
+	margin: 10px 10px 10px 10px; 
+	padding: 1px; 
+	float: left; 
+	width: 130px; 
+	height: 130px; 
+	font-size: 4em; 
+	text-align: center; 
+}
+
+
+img.gallery-thumb
+{
+	border: 1px solid white;
+	width: 130px;
+	height: 130px;
+	margin: 14px;
+}
