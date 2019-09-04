@@ -13,7 +13,7 @@ class Admin_login extends CI_Controller
    {
       //load
       $this->load->library('form_validation');
-      
+
       if($this->form_validation->run('login') == FALSE ) {
          //display login form
          $data['title'] = "Login";
@@ -32,13 +32,14 @@ class Admin_login extends CI_Controller
             
          //load pertinent view
          //$this->form_validation->unset_field_data();
+
          redirect('dashboard');
       }
       //just in case 
       else
       {
          //display login form
-         $data['title'] = "Login";
+         $data['title'] = "Login, Try Again!";
          $this->load->view('templates/loginheader',$data);
          $this->load->view('admin_login/login');
       }

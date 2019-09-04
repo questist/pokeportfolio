@@ -1,3 +1,5 @@
+
+
 <div class="content-box rounded-corners">
 
 <div class="slideshow-box">
@@ -18,5 +20,5 @@
 and links to colleagues. I hope you have a great stay
 and <br />please leave me a message with any inquiries <br />or 
 
-interest in my work.    <br> <a href="mailto:tadopemu@gmail.com">tadopemu@gmail.com</a> </p></div>
+interest in my work.    <br> <a href="mailto:me@artist.com">me@artist.com</a> </p></div>
 </div>

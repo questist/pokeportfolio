@@ -37,6 +37,7 @@
 | in the URL cannot be matched to a valid route.
 |
 */
+
 $route['dashboard/emptyTrash/(:any)'] = 'dashboard/emptyTrash/$1';
 $route['dashboard/do_upload/(:any)'] = 'dashboard/do_upload/$1';
 $route['dashboard/do_upload'] = 'dashboard/do_upload';
@@ -51,8 +52,8 @@ $route['dashboard'] = 'dashboard';
 $route['admin_login/logout'] = 'admin_login/logout';
 $route['admin_login/(:any)'] = 'admin_login/view/$1';
 $route['admin_login'] = 'admin_login';
-$route['default_controller'] = 'pages/view';
 $route['(:any)'] = 'pages/view/$1';
+$route['default_controller'] = 'pages/view';
 $route['404_override'] = '';
 
 /* End of file routes.php */

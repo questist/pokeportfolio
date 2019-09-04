@@ -10,6 +10,7 @@ class Pages extends CI_Controller
      // }
       parent::__construct();
       $this->load->model('home_model');
+      
    }
    
    public function view($page = "home")
@@ -23,7 +24,7 @@ class Pages extends CI_Controller
       
       if($page == "link")
       {
-         $data['title'] = "TADs links";
+         $data['title'] = "Artists links";
       }
       if($page == "resume")
       {
@@ -32,7 +33,7 @@ class Pages extends CI_Controller
       if($page == "home")
       {
          $data['page'] = "home";
-         $data['title'] = "Welcome to the Creative Works of Tomi Ajayi-Dopemu";
+         $data['title'] = "Welcome to the Artists Portfolio";
          $data['featured'] = $this->home_model->get_home_featured();
       }
       

@@ -19,6 +19,7 @@
  *
  */
 	define('ENVIRONMENT', 'development');
+	define('VIEWPATH','/Applications/MAMP/htdocs/pokeportfolio/artist/application/views/');
 /*
  *---------------------------------------------------------------
  * ERROR REPORTING

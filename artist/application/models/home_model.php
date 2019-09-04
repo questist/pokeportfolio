@@ -25,13 +25,21 @@ class Home_model extends CI_Model {
    
    public function add_new_photo($lrg, $thumb, $title, $section, $pos = -1)
    {
+      $sql = "SELECT MAX(position) FROM photo_gallery WHERE section = " . $section;
+      $return = $this->db->query($sql);
+      $position = 0;
+      
+      if($return != NULL) {
+         $position = $return;
+      }
+      echo $position . "<br>";
       $sql = "INSERT INTO photo_gallery(section,orig_src,thumb_src,title,position)";
       $sql .= " VALUES ( " . 
                            $this->db->escape($section). ",". 
                            $this->db->escape($lrg).",".
                            $this->db->escape($thumb).",".
-                           $this->db->escape($title).
-                           ", -1)";
+                           $this->db->escape($title). ",".
+                           $position . ")";
       $return = $this->db->query($sql);
       return $return;
    }
@@ -136,6 +144,8 @@ class Home_model extends CI_Model {
    { 
       $query = $this->db->get('login_data');
       $result = $query->row_array();
+      echo $result['password'] . "<br>";
+      echo $this->input->post('password');
       if($result['username'] == $this->input->post('username') && $result['password'] == $this->input->post('password'))
       {
          return TRUE;

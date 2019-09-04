@@ -217,10 +217,10 @@ class Dashboard extends CI_Controller
    
    public function do_upload($section, $ret = false)
    {
-     // if(!is_dir($_SERVER['DOCUMENT_ROOT']. "/Tomis_Website/public/files/"))
-		//	mkdir($_SERVER['DOCUMENT_ROOT']. "/Tomis_Website/public/files/", 0777, true);
+     // if(!is_dir($_SERVER['DOCUMENT_ROOT']. "PATH/TO/PUBLIC/FILES"))
+		//	mkdir($_SERVER['DOCUMENT_ROOT']. "PATH/TO/PUBLIC/FILES", 0777, true);
 		
-		//$handle = fopen($_SERVER['DOCUMENT_ROOT'] . "/Tomis_Website/public/files/" . $filename, "w") or exit("cannot open path");
+		//$handle = fopen($_SERVER['DOCUMENT_ROOT'] . "PATH/TO/PUBLIC/FILES" . $filename, "w") or exit("cannot open path");
       if(!$this->verify())
          redirect(site_url('admin_login'));
       

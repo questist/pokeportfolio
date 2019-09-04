@@ -3,7 +3,7 @@ $config = array(
             'login' => array(
                   array('field' => 'username',
                         'label' => 'Username',
-                        'rules' => 'required|min_length[2]|max_length[12]|xss_clean'
+                        'rules' => 'required|min_length[2]|max_length[12]'
                         ),
                   array('field' => 'password',
                         'label' => 'Password',
@@ -13,7 +13,7 @@ $config = array(
             'upload' => array(
                   array('field' => 'title',
                         'label' => 'title',
-                        'rules' => 'xss_clean'
+                        'rules' => 'alpha_numeric_spaces'
                         ),
                   array('field' => 'lrgimg',
                         'label' => 'lrgimg',
